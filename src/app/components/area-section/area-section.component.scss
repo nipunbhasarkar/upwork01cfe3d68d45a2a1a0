@@ -1,0 +1,33 @@
+.area-section {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 300px;
+
+  .tool-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    color: var(--text-color-secondary);
+
+    .tool-bar-title {
+      font-size: 12px;
+    }
+    .toolbar-action {
+      display: flex;
+      gap: 15px;
+      border-radius: 1000px;
+
+      .toolbar-action-icon {
+        cursor: pointer;
+        ::ng-deep {
+          svg {
+            height: 12px;
+            width: 12px;
+          }
+        }
+      }
+    }
+  }
+}

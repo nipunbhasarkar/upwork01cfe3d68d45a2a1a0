@@ -1,0 +1,16 @@
+.option-tag-container {
+  display: flex;
+  flex-direction: row;
+  color: var(--text-color-secondary);
+  cursor: pointer;
+
+  .add-option {
+  }
+  .option {
+    padding: 2px 10px;
+    border: 1px solid var(--text-color-secondary);
+    border-radius: 10px;
+    margin-right: 5px;
+    font-size: 11px;
+  }
+}

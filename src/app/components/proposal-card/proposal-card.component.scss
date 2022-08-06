@@ -1,0 +1,35 @@
+.proposal-card {
+  border: 1px solid var(--text-color-secondary);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+
+  .proposal-info {
+    line-height: 1.5;
+
+    .proposal-id {
+      font-size: 10px;
+      color: var(--text-color-secondary);
+    }
+    .proposal-name {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+    .proposal-desc {
+      font-size: 12px;
+    }
+  }
+  .counter-control {
+    cursor: pointer;
+    color: var(--text-color-secondary);
+    ::ng-deep {
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+}

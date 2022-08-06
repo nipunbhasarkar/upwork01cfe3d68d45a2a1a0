@@ -1,0 +1,39 @@
+.prod-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  .prod-details {
+    line-height: 1.5;
+    .prod-brand {
+      font-size: 12px;
+    }
+    .prod-series {
+      font-weight: 700;
+    }
+    .prod-msrp {
+      font-size: 10px;
+      color: var(--text-color-secondary);
+    }
+  }
+
+  .prod-sell-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1.5;
+    .prod-sp-label {
+      font-size: 10px;
+      color: var(--text-color-secondary);
+    }
+    .prod-sp {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+    .prod-profir-margin {
+      font-size: 10px;
+      color: var(--text-color-secondary);
+    }
+  }
+}

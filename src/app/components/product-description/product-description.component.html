@@ -1,0 +1,13 @@
+<div class="main-container">
+  <fa-icon class="close-icon" [icon]="closeIcon"></fa-icon>
+  <div class="prod-container">
+    <div class="prod-body">
+      <app-product-info [productInfo]="productInfo$ | async"></app-product-info>
+      <app-proposal-card [proposal]="proposal$ | async"></app-proposal-card>
+      <app-area-section [areas]="areas$ | async"></app-area-section>
+    </div>
+    <div class="submit">
+      <button class="submit-button" type="submit">Add to Proposal</button>
+    </div>
+  </div>
+</div>

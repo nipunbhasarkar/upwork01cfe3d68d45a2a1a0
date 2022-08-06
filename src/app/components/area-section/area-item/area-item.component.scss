@@ -1,0 +1,31 @@
+.active {
+  background-color: var(--background);
+}
+.area-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px 0 10px;
+  .area-item-left {
+    padding: 10px;
+    .chkbx {
+      display: flex;
+      margin-bottom: 5px;
+      .chkbx-checkbox {
+        cursor: pointer;
+        accent-color: var(--primary-color);
+        margin-right: 10px;
+        height: 20px;
+        width: 20px;
+      }
+      .chkbx-label {
+        cursor: pointer;
+        font-weight: 700;
+        font-stretch: expanded;
+      }
+    }
+    .options {
+      margin-left: 30px;
+    }
+  }
+}

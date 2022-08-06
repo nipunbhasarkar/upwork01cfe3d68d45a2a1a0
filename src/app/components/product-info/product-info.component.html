@@ -1,0 +1,12 @@
+<div class="prod-description">
+  <div class="prod-details">
+    <div class="prod-brand">{{ productInfo?.brand }}</div>
+    <div class="prod-series">{{ productInfo?.series }}</div>
+    <div class="prod-msrp">MSRP {{ productInfo?.msrp | currency }}</div>
+  </div>
+  <div class="prod-sell-info">
+    <div class="prod-sp-label">Sell Price</div>
+    <div class="prod-sp">{{ productInfo?.sellingPrice | currency }}</div>
+    <div class="prod-profir-margin">{{ productInfo?.profitMargin }} Profit</div>
+  </div>
+</div>

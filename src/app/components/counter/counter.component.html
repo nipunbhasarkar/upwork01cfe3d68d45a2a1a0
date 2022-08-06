@@ -1,0 +1,13 @@
+<div class="counter">
+  <fa-icon
+    class="counter-control"
+    [icon]="minus"
+    (click)="decrement()"
+  ></fa-icon>
+  <div class="counter-text">{{ counterValue }}</div>
+  <fa-icon
+    class="counter-control"
+    [icon]="plus"
+    (click)="increment()"
+  ></fa-icon>
+</div>

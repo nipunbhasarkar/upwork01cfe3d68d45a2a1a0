@@ -1,0 +1,10 @@
+<div class="area-section">
+  <div class="tool-bar">
+    <div class="tool-bar-title">Select Area(s)</div>
+    <div class="toolbar-action">
+      <fa-icon class="toolbar-action-icon" [icon]="iconSearch"></fa-icon>
+      <fa-icon class="toolbar-action-icon" [icon]="iconAdd"></fa-icon>
+    </div>
+  </div>
+  <app-area-item *ngFor="let area of areas" [area]="area"></app-area-item>
+</div>

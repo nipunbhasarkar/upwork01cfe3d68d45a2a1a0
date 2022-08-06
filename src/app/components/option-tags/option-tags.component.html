@@ -1,0 +1,6 @@
+<div class="option-tag-container">
+  <!-- <div *ngIf="!options" class="add-option" click>Add Option</div> -->
+  <ng-container *ngIf="options">
+    <div *ngFor="let option of options" class="option">{{ option }}</div>
+  </ng-container>
+</div>
