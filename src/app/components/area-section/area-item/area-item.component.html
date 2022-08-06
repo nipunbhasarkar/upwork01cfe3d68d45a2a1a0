@@ -1,13 +1,12 @@
 <div class="area-item" [ngClass]="{ active: checked }">
   <div class="area-item-left">
     <div class="chkbx">
-      <input
-        class="chkbx-checkbox"
-        type="checkbox"
-        (change)="checked = !checked"
-        id="irr-room"
-      />
-      <label class="chkbx-label" for="irr-room">{{ area?.name }}</label>
+      <input class="chkbx-checkbox" type="checkbox" [checked]="checked" />
+      <label
+        class="chkbx-label"
+        (click)="$event.stopPropagation(); checked = !checked"
+        >{{ area?.name }}</label
+      >
     </div>
     <div class="options">
       <app-option-tags [options]="area?.tags"></app-option-tags>
